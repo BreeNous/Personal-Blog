@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Blog</title>
-    <link rel="stylesheet" src="assets/css/form.css">
+    <link rel="style-sheet" src="/my-blog/assets/css/form.css">
 
 </head>
 <body>
 
-    <div class="themeContainer">
+    <header class="theme-container">
         <button class="sun">☀️</button>
-    </div>
+    </header>
 
     <div class="circleContainer">
         <h1 class="circle">My First Blog</h1>
     </div>
 
-    <div class="formContainer">
-        <h2 class="formTitle">What's on your mind?</h2>
+    <div>
 
-        <p>Username</p>
-        <label for="username"></label>
-        <input type="text" id="username" name="username">
+            <label for="username">Username</label>
+            <br>
+            <input type="text" id="username" name="username" autocomplete="off">
+            <br>
+            <label for="title">Title</label>
+            <br>
+            <input type="text" id="title" name="title">
+            <br>
+            <label for="content">Content</label>
+            <br>
+            <input type="text" id="content" name="content">
+            <br>
+            <label for="submit">Submit</label>
+            <br>
+            <input type="submit" id="submit" name="submit">
     
-        <p>Title</p>
-        <label for="title"></label>
-        <input type="text" id="title" name="title">
-
-        <p>Content</p>
-        <label for="content"></label>
-        <input type="text" id="content" name="content">
-
-        <button class="submitBtn">Submit</button>
+        
     </div>
 
 
