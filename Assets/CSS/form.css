@@ -1,0 +1,7 @@
+.themeContainer {
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    border-bottom: 5px;
+    border-style: double;
+}
