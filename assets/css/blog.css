@@ -37,7 +37,7 @@
 }
 
 .blogSubmissions {
-    height: 650px;
+    height: 580px;
     display: flex;
     flex-direction: column;
     padding: 10px;
