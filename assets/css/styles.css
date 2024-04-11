@@ -1,9 +1,0 @@
-.theme-container {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    border-bottom: 5px;
-    border-style: double;
-    border-color: black;
-}
