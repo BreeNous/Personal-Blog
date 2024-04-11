@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Blog</title>
-    <link rel="stylesheet" src="/assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
 </head>
 <body>
 
-    <div class="top">
-        <h1 class= "topTitle">My First Blog</h1>
-        <button class="backButton">Back</button>
+    
+    <header class="top">
+        <h2 class= "topTitle">My First Blog</h2>
+        <div class="buttonContainer">
+        <button class="backButton">&#8592; Back</button>
         <button class="sun">☀️</button>
-    </div>
+        </div>
+    </header>
 
-    <div class="blogSubmissions">
+    <main class="blogSubmissions">
         <!--I think this spot may need to reamin empty and add a div element in javascript when user posts something-->
         <!--and then i think it needs to be appended to the new container element each time somethig is submitted-->
-    </div>
+    </main>
 
-    <div class= bottom>
+    <div class="divided"></div>
+
+    <footer class= bottom>
         <p class="madeBy">Made by Breeanna</p>
+        <br>
         <div class="personalResources">
-        <p><span class="bold">Portfolio:</span> Breeanna</p>
-        <p><span class="bold">Blog:</span> This Blog</p>
-        <p><span class="bold">Email:</span> Breeanna.Nouskhajian@gmail.com</p>
+            <p class="res"><span class="bold">Portfolio:</span> Breeanna</p>
+           
+            <p class="res"><span class="bold">Blog:</span> This Blog</p>
+         
+            <p><span class="bold">Email:</span> Breeanna.Nouskhajian@gmail.com</p>
         </div>
-    </div>
-    
+    </footer>
 </body>
 </html>

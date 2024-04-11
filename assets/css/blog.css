@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: solid black;
+    border-bottom-style: double;
+    border-width: 10px;
+        
+}
+.topTitle {
+    padding-left: 20px;
+}
+
+.buttonContainer {
+    padding-right: 20px;
+}
+
+.backButton {
+    height: 30px;
+    width: 70px;
+    color: white;
+    background-color: black;
+    border-style: none;
+    border-radius: 2px;
+}
+
+.sun {
+    background-color: transparent;
+    border: none;
+}
+
+.blogSubmissions {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: solid black 3.5px;
+}
+
+.divided {
+    height: 3.5px;
+}
+
+.bottom {
+   
+    border-top: solid black 3.5px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.madeBy {
+    display: flex;
+    justify-content: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.res {
+    padding-bottom: 7px;
+}
+
+.personalResources {
+    font-style: italic;
+}
