@@ -1,66 +1,57 @@
+
+
 let themeButton = document.getElementById("theme")
-let changeButton = themeButton
 let body = document.getElementById("body");
 let header = document.getElementById("header");
 let middle = document.getElementById("middle");
 let statement = document.getElementById("statement");
-let userName = document.getElementById("userName");
+let blogUser = document.getElementById("blogUser");
 let blogTitle = document.getElementById("blogTitle");
 let blogContent = document.getElementById("blogContent");
 let submit = document.getElementById("submit");
 let username = document.getElementById("username");
 let title = document.getElementById("title");
 let content = document.getElementById("content");
+let circle = document.getElementById("circle")
 
-let isNightMode = false;
+let isNightTheme = false;
 
 let changeTheme = function () {
 
-    if (!isNightMode) {
-        changeButton.textContent = "🌙"
-        body.style.backgroundColor = "black";
-        header.style.borderColor = "white";
-        middle.style.borderColor = "white";
-        statement.style.color = "white";
-        userName.style.color = "white";
-        blogTitle.style.color = "white";
-        blogContent.style.color = "white";
-        submit.style.color = "black";
-        submit.style.backgroundColor = "white";
-        username.style.borderColor = "white";
-        username.style.backgroundColor = "black";
-        username.style.color = "white";
-        title.style.borderColor = "white";
-        title.style.backgroundColor = "black";
-        title.style.color = "white";
-        content.style.borderColor = "white";
-        content.style.backgroundColor = "black";
-        content.style.color = "white";
+    if (!isNightTheme) {
+        themeButton.classList.toggle("alt");
+        body.classList.toggle("alt");
+        header.classList.toggle("alt");
+        middle.classList.toggle("alt");
+        statement.classList.toggle("alt");
+        blogUser.classList.toggle("alt");
+        blogTitle.classList.toggle("alt");
+        blogContent.classList.toggle("alt");
+        submit.classList.toggle("alt");
+        username.classList.toggle("alt");
+        title.classList.toggle("alt");
+        content.classList.toggle("alt");
+        circle.classList.toggle("alt");
+        
+        isNightTheme = true;
 
-        isNightMode = true;
     } else {
-        changeButton.textContent = "☀️"
-        body.style.backgroundColor = "white";
-        header.style.borderColor = "black";
-        middle.style.borderColor = "black";
-        statement.style.color = "black";
-        userName.style.color = "black";
-        blogTitle.style.color = "black";
-        blogContent.style.color = "black";
-        submit.style.color = "white";
-        submit.style.backgroundColor = "black";
-        username.style.borderColor = "black";
-        username.style.backgroundColor = "white";
-        username.style.color = "black";
-        title.style.borderColor = "black";
-        title.style.backgroundColor = "white";
-        title.style.color = "black";
-        content.style.borderColor = "black";
-        content.style.backgroundColor = "white";
-        content.style.color = "black";
+        themeButton.classList.remove("alt");
+        body.classList.remove("alt");
+        header.classList.remove("alt");
+        middle.classList.remove("alt");
+        statement.classList.remove("alt");
+        blogUser.classList.remove("alt");
+        blogTitle.classList.remove("alt");
+        blogContent.classList.remove("alt");
+        submit.classList.remove("alt");
+        username.classList.remove("alt");
+        title.classList.remove("alt");
+        content.classList.remove("alt");
+        circle.classList.remove("alt");
 
 
-        isNightMode = false;
+        isNightTheme = false;
     }
 }
 
