@@ -10,24 +10,24 @@ function makeCard() {
         postData.forEach(post => {
             // Card container
             let cardContainer = document.createElement("div");
-            cardContainer.className = "card";
+            cardContainer.className = "card", "card.alt";
             cardContainer.id = "card";
 
             // Card header
             let cardHeader = document.createElement("div");
-            cardHeader.className = "card-header";
+            cardHeader.className = "cardHeader", "cardHeader.alt";
             cardHeader.innerHTML = post.postTitle;
             cardHeader.id = "cardHeader";
 
             // Card body
             let cardBody = document.createElement("div");
-            cardBody.className = "card-body";
+            cardBody.className = "cardBody", "cardBody.alt";
             cardBody.innerHTML = post.postContent;
             cardBody.id = "cardBody";
 
             // Card footer
             let cardFooter = document.createElement("div");
-            cardFooter.className = "card-footer";
+            cardFooter.className = "cardFooter", "cardFooter.alt";
             cardFooter.innerHTML = (`Posted by: ${post.userName}`);
             cardFooter.id = "cardFooter";
 
