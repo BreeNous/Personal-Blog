@@ -11,21 +11,25 @@ function makeCard() {
             // Card container
             let cardContainer = document.createElement("div");
             cardContainer.className = "card";
+            cardContainer.id = "card";
 
             // Card header
             let cardHeader = document.createElement("div");
             cardHeader.className = "card-header";
             cardHeader.innerHTML = post.postTitle;
+            cardHeader.id = "cardHeader";
 
             // Card body
             let cardBody = document.createElement("div");
             cardBody.className = "card-body";
             cardBody.innerHTML = post.postContent;
+            cardBody.id = "cardBody";
 
             // Card footer
             let cardFooter = document.createElement("div");
             cardFooter.className = "card-footer";
-            cardFooter.innerHTML = post.userName;
+            cardFooter.innerHTML = (`Posted by: ${post.userName}`);
+            cardFooter.id = "cardFooter";
 
             cardContainer.appendChild(cardHeader);
             cardContainer.appendChild(cardBody);

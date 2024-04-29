@@ -1,5 +1,46 @@
-.card {
 
+.card {
+    padding: 5px 10px;
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 5px;
+    transition: border-color 1s ease;
 }
 
-.
+.card.alt {
+    border-color: white;
+}
+
+.card-header {
+    font-weight: bolder;
+    font-size: large;
+    border-bottom: solid 1px black;
+    padding: 5px 0px;
+    margin-bottom: 2px;
+    transition: border-color 1s ease, color 1s ease;
+}
+
+.card-header.alt{
+    border-color: white;
+    color: white;
+}
+
+.card-body {
+    padding: 10px 15px;
+    font-style: italic;
+    height: 115px;
+    transition: color 1s ease;
+}
+
+.card-body.alt {
+    color: white;
+}
+
+.card-footer {
+    font-size: small;
+    transition: color 1s ease;
+}
+
+.card-footer.alt {
+    color: white;
+}
