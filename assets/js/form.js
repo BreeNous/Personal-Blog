@@ -11,20 +11,25 @@ let saveToLocalStorage = function(event) {
     let titleInput = document.getElementById("title").value;
     let contentInput = document.getElementById("content").value;
 
-
-    let blogPostData = {
+    const newPostData = {
         userName: usernameInput,
         postTitle: titleInput,
         postContent: contentInput
     };
 
-    blogPostData.id = Math.random();
+    let postsArray = JSON.parse(localStorage.getItem('postsArray'))
 
-    localStorage.setItem("blogPostData", JSON.stringify(blogPostData));
+    if (postsArray === null) {
+        postsArray = [newPostData];
+        localStorage.setItem('postsArray', JSON.stringify(postsArray));
+    } else {
+        postsArray.push(newPostData);
+        localStorage.setItem('postsArray', JSON.stringify(postsArray));
+    }
 
-    usernameInput = '';
-    titleInput = '';
-    contentInput = '';
+    usernameInput.value = '';
+    titleInput.value = '';
+    contentInput.value = '';
 
     window.location.href = "blog.html"
    
