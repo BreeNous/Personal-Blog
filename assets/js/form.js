@@ -1,22 +1,34 @@
-// Grabbing elements from html
-const usernameInput = document.getElementById("username");
-const titleInput = document.getElementById("title");
-const contentInput = document.getElementById("content");
+
 const submitButton = document.getElementById("submit");
+// Grabbing elements from html
 
 // saves user input to local storage and clears the input fields for next entry upon submit button click.
-let saveToLocalStorage = function() {
+// then user is taken to the next page with window.location.href = "blog.html".
+let saveToLocalStorage = function(event) {
+    event.preventDefault();
+
+    let usernameInput = document.getElementById("username").value;
+    let titleInput = document.getElementById("title").value;
+    let contentInput = document.getElementById("content").value;
+
+
     let blogPostData = {
-        userName: usernameInput.value,
-        postTitle: titleInput.value,
-        postContent: contentInput.value,
+        userName: usernameInput,
+        postTitle: titleInput,
+        postContent: contentInput
     };
+
+    blogPostData.id = Math.random();
 
     localStorage.setItem("blogPostData", JSON.stringify(blogPostData));
 
-    usernameInput.value = '';
-    titleInput.value = '';
-    contentInput.value = '';
+    usernameInput = '';
+    titleInput = '';
+    contentInput = '';
+
+    window.location.href = "blog.html"
+   
 }
 
 submitButton.addEventListener('click', saveToLocalStorage);
+
