@@ -1,25 +1,24 @@
 
 
 let themeButton = document.getElementById("theme")
-let body = document.getElementById("body");
-let header = document.getElementById("header");
-let middle = document.getElementById("middle");
-let statement = document.getElementById("statement");
-let blogUser = document.getElementById("blogUser");
-let blogTitle = document.getElementById("blogTitle");
-let blogContent = document.getElementById("blogContent");
-let submit = document.getElementById("submit");
-let username = document.getElementById("username");
-let title = document.getElementById("title");
-let content = document.getElementById("content");
-let circle = document.getElementById("circle")
-
-let isNightTheme = false;
 
 let changeTheme = function () {
+    let body = document.getElementById("body");
+    let header = document.getElementById("header");
+    let middle = document.getElementById("middle");
+    let statement = document.getElementById("statement");
+    let blogUser = document.getElementById("blogUser");
+    let blogTitle = document.getElementById("blogTitle");
+    let blogContent = document.getElementById("blogContent");
+    let submit = document.getElementById("submit");
+    let username = document.getElementById("username");
+    let title = document.getElementById("title");
+    let content = document.getElementById("content");
+    let circle = document.getElementById("circle")
+    let isNightTheme = false;
 
     if (!isNightTheme) {
-        themeButton.classList.toggle("alt");
+        themeButton.textContent = "🌙";
         body.classList.toggle("alt");
         header.classList.toggle("alt");
         middle.classList.toggle("alt");
@@ -36,7 +35,7 @@ let changeTheme = function () {
         isNightTheme = true;
 
     } else {
-        themeButton.classList.remove("alt");
+        themeButton.textContent = "☀️";
         body.classList.remove("alt");
         header.classList.remove("alt");
         middle.classList.remove("alt");

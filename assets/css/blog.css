@@ -4,7 +4,7 @@
 }
 
 .body {
-    background-color: white;
+    background-color: none;
     transition: background-color 1s ease;
 }
 .body.alt {
@@ -30,9 +30,10 @@
 
 .topTitle {
     padding-left: 20px;
+    color: black;
     transition: color 1s ease;
 }
-.topTitle-alt {
+.topTitle.alt {
     color: white;
 }
 
@@ -58,15 +59,9 @@
 
 
 .sun {
-    content:"☀️";
     background-color: transparent;
     border: none;
-    transition: content 1s ease;
 }
-.sun.alt {
-    content: "🌙";
-}
-
 
 .blogSubmissions {
     height: 580px;
@@ -95,7 +90,7 @@
     transition: border-color 1s ease;
 }
 .bottom.alt {
-    border-color: black;
+    border-color: white;
 }
 
 
@@ -104,28 +99,25 @@
     justify-content: center;
     transition: color 1s ease;
 }
-
 .madeBy.alt {
     color: white;
 }
 
+
 .bold {
     font-weight: bold;
-    transition: color 1s ease;
-}
-.bold-alt {
-    color: white;
 }
 
 
 .res {
     padding-bottom: 7px;
-    transition: color 1s ease;
 }
-.res.alt {
-    color: white;
-}
+
 
 .personalResources {
     font-style: italic;
+    transition: color 1s ease;
+}
+.personalResources.alt {
+    color: white;
 }
