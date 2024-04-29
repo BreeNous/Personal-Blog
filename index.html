@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="body" id="body">
+
+    <header class="theme-container" id="header">
+        <button class="sun" id="theme">☀️</button>
+    </header>
+
+    <main class="main">
+        <div class="circleContainer">
+            <h1 id="circle" class="circle">My First Blog</h1>
+        </div>
+
+        <div id="middle" class="divide"></div>
+
+        <form class="formContainer" id="form">
+            <div class="formInput">
+
+                <h2 id="statement" class="statement">What's on your mind?</h2>
+                <br>
+
+                <label id="blogUser" for="username" class="textLabel">Username</label>
+                <input class="textInput1" type="text" id="username" name="username" autocomplete="off"></input>
+                <br>
+
+                <label id="blogTitle" for="title" class="textLabel">Title</label>
+                <input class="textInput1" type="text" id="title" name="title"></input>
+                <br>
+
+                <label id="blogContent" for="content" class="textLabel">Content</label>
+                <input class="textInput2" type="text" id="content" name="content"></input>
+                <br>
+
+                <button class="submit" id="submit">Submit</button>
+        
+            </div>
+        </form>
+    </main>
+
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/form.js"></script>
+
+</body>
+</html>
+
